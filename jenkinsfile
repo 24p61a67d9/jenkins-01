@@ -1,2 +1,15 @@
-hello CSD-C 
-hello DevOps
+node {
+
+    stage('Preparation') {
+        git branch: 'main', url: 'https://github.com/24p61a67d9/jenkins-01.git'
+    }
+
+    stage('Build') {
+        bat '"C:\\Users\\vaishnavi\\AppData\\Local\\Programs\\Python\\Python314\\python.exe" b.py'
+    }
+
+    stage('Test') {
+        bat '"C:\\Users\\vaishnavi\\AppData\\Local\\Programs\\Python\\Python314\\python.exe" b.py'
+    }
+
+}
